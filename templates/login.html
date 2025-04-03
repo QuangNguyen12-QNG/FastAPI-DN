@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/login.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Trắc nghiệm trực tuyến</h2>
+            <div class="img-box">
+                <img class="img" src="{{ url_for('static', path='icons/icondangnhap.png') }}">
+            </div>
+        </div>
+        <a href="/login" class="google-btn">
+            <img src="{{ url_for('static', path='icons/icongg.png') }}" alt="Google Icon" class="google-icon">
+            <span class="btn-text">Đăng nhập Gmail</span>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.body {
+    width: 1140px;
+    height: 1024px;
+    margin: 0 auto; /* Canh giữa màn hình */
+    background-color: #f8f9fa; /* Màu nền nhẹ */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Giúp footer luôn nằm ở cuối */
+}
+
+/* Định dạng container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #007bff;
+    color: white;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Nút đăng xuất */
+.logout-btn {
+    background: white;
+    color: #007bff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background: #f0f0f0;
+}
+
+/* Main */
+main {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Trang Web{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/welcome.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Chào mừng, {{ user.name }}</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Tạo đề thi</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </nav>
+            <a href="/logout" class="logout-btn">Đăng xuất</a>
+        </div>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Website hỗ trợ thi trắc nghiệm trực tuyến 2025</p>
+        </div>
+    </footer>
+</body>
+</html>

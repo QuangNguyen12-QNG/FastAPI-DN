@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 320px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.img-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a56c6;
+    color: white;
+    width: 220px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 10px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.google-btn:hover {
+    background-color: #4285F4;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Hiệu ứng khi nhấn */
+.google-btn:active {
+    background-color: #2a56c6;
+    transform: scale(0.96);
+}
+
+
+/* Icon Google */
+.google-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Văn bản trong nút */
+.btn-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease;
+}
